@@ -6,13 +6,14 @@ const MenuItem = require("./models/menuItem.js");
 const bodyParser = require('body-parser');
 const personRoute = require("./routes/personRoutes.js")
 const menuRoute = require("./routes/menuRoutes.js")
+require('dotenv').config()
 
-
+const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("the listening port is 3000");
 });
 

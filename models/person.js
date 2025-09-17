@@ -17,7 +17,7 @@ const personSchema = new mongoose.Schema({
     },
     work:{
         type:String,
-        enum:["chef","waiter","manger"],
+        enum:["chef","waiter","manager"],
         require:true
     },
     email:{
